@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, ScrollView, Image, Pressable, Alert, ActivityIndicator, StatusBar } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Image, Pressable, Alert, ActivityIndicator, Button } from 'react-native';
 
 export default function App() {
   const alertPress = () => {
@@ -12,7 +12,7 @@ export default function App() {
     <ScrollView style={styles.container}>
 
       <View style={styles.textContainer}>
-        
+
         <Text style={[styles.text, styles.text1]}>Itadakimasu !</Text>
         <Text style={[styles.text, styles.text2]}>Urusai baka !</Text>
         <Text style={[styles.text, styles.text3]}>Sumimasen sensei.</Text>
@@ -34,6 +34,7 @@ export default function App() {
 
       <ActivityIndicator style={styles.activity} size="large" color="white" />
 
+    
     </ScrollView>
   );
 }
@@ -67,6 +68,7 @@ const styles = StyleSheet.create({
     backgroundColor: "yellow",
     padding: 10,
     margin: 40,
+    borderRadius: 30,
   },
   activity: {
     margin: 20,
